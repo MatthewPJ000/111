@@ -42,12 +42,12 @@ const InputsBox: React.FC<InputsBoxProps> = ({
     { id: 2, content: "Prob(%)", value: 0, isAdding: true },
   ]);
   const [data, setData] = useState<DataItem | null>(null);
-  const [loading, setLoading] = useState(true);
+
   const [error, setError] = useState<string | null>(null);
   console.log(error)
   useEffect(() => {
     const fetchData = async () => {
-      setLoading(true);
+
       setError(null);
       try {
         const response = await axios.get<DataItem>(
@@ -70,7 +70,6 @@ const InputsBox: React.FC<InputsBoxProps> = ({
         setError("Error loading data");
         console.error(err);
       } finally {
-        setLoading(false);
       }
     };
 
