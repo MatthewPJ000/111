@@ -352,18 +352,18 @@ export default function Edit() {
     <div className="flex flex-col mx-auto items-center p-8 min-h-screen text-base-content">
       <div className="absolute flex top-20 right-[40px]">
         <button
-          className="btn btn-outline mt-1 w-30"
+          className="btn btn-outline mt-1 w-40"
           onClick={() => setIsAddCategoryModalOpen(true)}
         >
           Add Project
         </button>
 
-        <details className="dropdown-top dropdown-end mb-1 w-30">
-          <summary className="btn m-1 w-30" onClick={fetchCollections}>
+        <details className="dropdown-top dropdown-end mb-1 w-40">
+          <summary className="btn m-1 w-40" onClick={fetchCollections}>
             Select Project
           </summary>
           {/* {isOpen && ( */}
-          <ul className="menu dropdown-content bg-base-100 rounded-box w-30 p-2 shadow">
+          <ul className="menu dropdown-content bg-base-100 rounded-box w-40 p-2 shadow">
             {collections.map((collection) => (
               <li key={collection} >
                 <a
