@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "daisyui/dist/full.css";
+
+
+:root {
+  --node-box-shadow: 10px 0 15px rgba(42, 138, 246, 0.3), -10px 0 15px rgba(233, 42, 103, 0.3);
+}
+
+@media (min-width: 170px) {
+  .flex-col-170px {
+    flex-direction: column;
+  }
+}
+
+@layer utilities {
+  .wrapper.gradient:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    padding:10px;
+    background: conic-gradient(from -160deg, #e92a67, #a853ba, #2a8af6, #2a8af600);
+    animation: spinner 4s linear infinite;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.group .react-flow__controls-button {
+  @apply w-10 h-10 p-1 flex justify-center items-center box-content;
+
+}
+

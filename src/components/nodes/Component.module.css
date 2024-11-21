@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+  z-index: 10;
+  border-radius: 0.5rem; /* This corresponds to `rounded-lg` */
+  background-color: #e2e8f0; /* Tailwind `bg-slate-200` */
+  box-shadow: var(--node-box-shadow); /* Custom shadow variable */
+}
