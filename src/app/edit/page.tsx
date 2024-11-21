@@ -447,13 +447,7 @@ export default function Edit() {
               Create New Product
             </h3>
           </div>
-          {/* <input
-            type="text"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-2xl rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-3 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            placeholder="Type New Project Name"
-            value={newCategory}
-            onChange={(e) => setNewCategory(e.target.value)}
-          /> */}
+       
           <div className="grid gap-4 grid-cols-2 border-b border-gray-200 px-3">
             <div className="col-span-2">
               <label className="block mb-2 mt-3 text-xl font-medium ">
@@ -462,7 +456,7 @@ export default function Edit() {
               <input
                 type="text"
                 name="name"
-                className="w-[350px] border mb-3 border-gray-300 text-md rounded-sm focus:ring-primary-600 focus:border-primary-600 block p-3.5 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                className="w-[350px] border mb-3 border-gray-300 text-md rounded-sm focus:ring-primary-600 focus:border-primary-600 block p-3.5"
                 placeholder="Type New Project Name"
                 value={newCategory}
                 onChange={(e) => setNewCategory(e.target.value)}
